@@ -22,9 +22,7 @@ def ai(prompt):
     text += response["choices"][0]["text"]
     if not os.path.exists("Openai"):
         os.mkdir("Openai")
-        
-    #with open(f"Openai/prompt - {random.randint(1, 100000)}", "w") as f:
-     with open(f"Openai/ {prompt[0:30]}.txt", "w") as f:  
+    with open(f"Openai/prompt - {random.randint(1, 100000)}", "w") as f:
         f.write(text)
 
 
